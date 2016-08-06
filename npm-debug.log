@@ -1,0 +1,163 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/Cellar/node/6.2.0/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'sqlite3',
+1 verbose cli   'libsqlite3-dev' ]
+2 info using npm@3.8.9
+3 info using node@v6.2.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData sqlite3
+8 silly fetchPackageMetaData libsqlite3-dev
+9 silly fetchNamedPackageData sqlite3
+10 silly mapToRegistry name sqlite3
+11 silly mapToRegistry using default registry
+12 silly mapToRegistry registry https://registry.npmjs.org/
+13 silly mapToRegistry data Result {
+13 silly mapToRegistry   raw: 'sqlite3',
+13 silly mapToRegistry   scope: null,
+13 silly mapToRegistry   name: 'sqlite3',
+13 silly mapToRegistry   rawSpec: '',
+13 silly mapToRegistry   spec: 'latest',
+13 silly mapToRegistry   type: 'tag' }
+14 silly mapToRegistry uri https://registry.npmjs.org/sqlite3
+15 silly fetchNamedPackageData libsqlite3-dev
+16 silly mapToRegistry name libsqlite3-dev
+17 silly mapToRegistry using default registry
+18 silly mapToRegistry registry https://registry.npmjs.org/
+19 silly mapToRegistry data Result {
+19 silly mapToRegistry   raw: 'libsqlite3-dev',
+19 silly mapToRegistry   scope: null,
+19 silly mapToRegistry   name: 'libsqlite3-dev',
+19 silly mapToRegistry   rawSpec: '',
+19 silly mapToRegistry   spec: 'latest',
+19 silly mapToRegistry   type: 'tag' }
+20 silly mapToRegistry uri https://registry.npmjs.org/libsqlite3-dev
+21 verbose request uri https://registry.npmjs.org/sqlite3
+22 verbose request no auth needed
+23 info attempt registry request try #1 at 1:28:25 PM
+24 verbose request id 8014d25cccd3266b
+25 http request GET https://registry.npmjs.org/sqlite3
+26 verbose request uri https://registry.npmjs.org/libsqlite3-dev
+27 verbose request no auth needed
+28 info attempt registry request try #1 at 1:28:25 PM
+29 http request GET https://registry.npmjs.org/libsqlite3-dev
+30 http 200 https://registry.npmjs.org/sqlite3
+31 verbose headers { server: 'CouchDB/1.6.1 (Erlang OTP/R16B03)',
+31 verbose headers   etag: '"DCXQK8OAJI2WLTW5KNDLJWMK4"',
+31 verbose headers   'content-type': 'application/json',
+31 verbose headers   'content-encoding': 'gzip',
+31 verbose headers   'cache-control': 'max-age=300',
+31 verbose headers   'content-length': '14499',
+31 verbose headers   'accept-ranges': 'bytes',
+31 verbose headers   date: 'Sat, 06 Aug 2016 17:28:25 GMT',
+31 verbose headers   via: '1.1 varnish',
+31 verbose headers   age: '121',
+31 verbose headers   connection: 'keep-alive',
+31 verbose headers   'x-served-by': 'cache-iad2126-IAD',
+31 verbose headers   'x-cache': 'HIT',
+31 verbose headers   'x-cache-hits': '1',
+31 verbose headers   'x-timer': 'S1470504505.328066,VS0,VE0',
+31 verbose headers   vary: 'Accept-Encoding' }
+32 silly get cb [ 200,
+32 silly get   { server: 'CouchDB/1.6.1 (Erlang OTP/R16B03)',
+32 silly get     etag: '"DCXQK8OAJI2WLTW5KNDLJWMK4"',
+32 silly get     'content-type': 'application/json',
+32 silly get     'content-encoding': 'gzip',
+32 silly get     'cache-control': 'max-age=300',
+32 silly get     'content-length': '14499',
+32 silly get     'accept-ranges': 'bytes',
+32 silly get     date: 'Sat, 06 Aug 2016 17:28:25 GMT',
+32 silly get     via: '1.1 varnish',
+32 silly get     age: '121',
+32 silly get     connection: 'keep-alive',
+32 silly get     'x-served-by': 'cache-iad2126-IAD',
+32 silly get     'x-cache': 'HIT',
+32 silly get     'x-cache-hits': '1',
+32 silly get     'x-timer': 'S1470504505.328066,VS0,VE0',
+32 silly get     vary: 'Accept-Encoding' } ]
+33 verbose get saving sqlite3 to /Users/jguzik83/.npm/registry.npmjs.org/sqlite3/.cache.json
+34 verbose correctMkdir /Users/jguzik83/.npm correctMkdir not in flight; initializing
+35 http 404 https://registry.npmjs.org/libsqlite3-dev
+36 verbose headers { 'content-type': 'application/json',
+36 verbose headers   'cache-control': 'max-age=0',
+36 verbose headers   'content-length': '2',
+36 verbose headers   'accept-ranges': 'bytes',
+36 verbose headers   date: 'Sat, 06 Aug 2016 17:28:25 GMT',
+36 verbose headers   via: '1.1 varnish',
+36 verbose headers   age: '0',
+36 verbose headers   connection: 'keep-alive',
+36 verbose headers   'x-served-by': 'cache-iad2134-IAD',
+36 verbose headers   'x-cache': 'MISS',
+36 verbose headers   'x-cache-hits': '0',
+36 verbose headers   'x-timer': 'S1470504505.330541,VS0,VE83',
+36 verbose headers   vary: 'Accept-Encoding' }
+37 silly get cb [ 404,
+37 silly get   { 'content-type': 'application/json',
+37 silly get     'cache-control': 'max-age=0',
+37 silly get     'content-length': '2',
+37 silly get     'accept-ranges': 'bytes',
+37 silly get     date: 'Sat, 06 Aug 2016 17:28:25 GMT',
+37 silly get     via: '1.1 varnish',
+37 silly get     age: '0',
+37 silly get     connection: 'keep-alive',
+37 silly get     'x-served-by': 'cache-iad2134-IAD',
+37 silly get     'x-cache': 'MISS',
+37 silly get     'x-cache-hits': '0',
+37 silly get     'x-timer': 'S1470504505.330541,VS0,VE83',
+37 silly get     vary: 'Accept-Encoding' } ]
+38 silly fetchPackageMetaData Error: Registry returned 404 for GET on https://registry.npmjs.org/libsqlite3-dev
+38 silly fetchPackageMetaData     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+38 silly fetchPackageMetaData     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:242:14)
+38 silly fetchPackageMetaData     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+38 silly fetchPackageMetaData     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:200:22)
+38 silly fetchPackageMetaData     at emitTwo (events.js:106:13)
+38 silly fetchPackageMetaData     at Request.emit (events.js:191:7)
+38 silly fetchPackageMetaData     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1067:10)
+38 silly fetchPackageMetaData     at emitOne (events.js:101:20)
+38 silly fetchPackageMetaData     at Request.emit (events.js:188:7)
+38 silly fetchPackageMetaData     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:988:12)
+38 silly fetchPackageMetaData  error for libsqlite3-dev { Error: Registry returned 404 for GET on https://registry.npmjs.org/libsqlite3-dev
+38 silly fetchPackageMetaData     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+38 silly fetchPackageMetaData     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:242:14)
+38 silly fetchPackageMetaData     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+38 silly fetchPackageMetaData     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:200:22)
+38 silly fetchPackageMetaData     at emitTwo (events.js:106:13)
+38 silly fetchPackageMetaData     at Request.emit (events.js:191:7)
+38 silly fetchPackageMetaData     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1067:10)
+38 silly fetchPackageMetaData     at emitOne (events.js:101:20)
+38 silly fetchPackageMetaData     at Request.emit (events.js:188:7)
+38 silly fetchPackageMetaData     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:988:12) pkgid: 'libsqlite3-dev', statusCode: 404, code: 'E404' }
+39 silly rollbackFailedOptional Starting
+40 silly rollbackFailedOptional Finishing
+41 silly runTopLevelLifecycles Starting
+42 silly runTopLevelLifecycles Finishing
+43 silly install printInstalled
+44 verbose stack Error: Registry returned 404 for GET on https://registry.npmjs.org/libsqlite3-dev
+44 verbose stack     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+44 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:242:14)
+44 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+44 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:200:22)
+44 verbose stack     at emitTwo (events.js:106:13)
+44 verbose stack     at Request.emit (events.js:191:7)
+44 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1067:10)
+44 verbose stack     at emitOne (events.js:101:20)
+44 verbose stack     at Request.emit (events.js:188:7)
+44 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:988:12)
+45 verbose statusCode 404
+46 verbose pkgid libsqlite3-dev
+47 verbose cwd /Users/jguzik83/Desktop/rails/bowling
+48 error Darwin 14.5.0
+49 error argv "/usr/local/Cellar/node/6.2.0/bin/node" "/usr/local/bin/npm" "install" "sqlite3" "libsqlite3-dev"
+50 error node v6.2.0
+51 error npm  v3.8.9
+52 error code E404
+53 error 404 Registry returned 404 for GET on https://registry.npmjs.org/libsqlite3-dev
+54 error 404
+55 error 404 'libsqlite3-dev' is not in the npm registry.
+56 error 404 You should bug the author to publish it (or use the name yourself!)
+57 error 404 Note that you can also install from a
+58 error 404 tarball, folder, http url, or git url.
+59 verbose exit [ 1, true ]
