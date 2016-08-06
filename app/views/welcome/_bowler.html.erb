@@ -1,0 +1,17 @@
+<div class="bowler_stats">
+  <div class="bowler_name">
+    <strong>Bowler Name:&nbsp;</strong><%= user.name %>
+  </div>
+  <div class="bowler_average">
+    <strong>Average:&nbsp;</strong><%= user.average %>
+  </div>
+  <div class="bowler_bio">
+    <strong>Something Quirky:&nbsp;</strong><%= user.bio %>
+  </div>
+  <div class="bowler_funds">
+    <strong>Total Money Pledged:&nbsp;</strong>$<%= user.donations.sum(:pledge) %>
+  </div>
+  <div class="bowler_link">
+    <%= button_to 'View/Donate to this bowler', new_user_donation_path(user.id), method: :get %>
+  </div>
+</div>

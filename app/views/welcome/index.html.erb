@@ -1,0 +1,30 @@
+<div class="total">
+  <strong>Total Raised: $<%= @total %></strong>
+</div>
+<div class="total_to_go">
+  <strong>Still To Go: $<%= (1500 - @total) %></strong>
+</div>
+
+
+<div id='eventDetails'>
+  <h3>Event Details</h3>
+  <span><strong>Place:</strong>&nbsp;Harmony Bowl</span><br>
+  <span><strong>Address:</strong>&nbsp;1815 State Route 35</span><br>
+  <span><strong>Address:</strong>&nbsp;Middletown, NJ 07748</span><br>
+  <span><strong>Date:</strong>&nbsp;August 28 2016</span><br>
+  <span><strong>Time:</strong>&nbsp;3:00 PM EST</span><br>
+</div>
+
+<div class="bowlers">
+  <h3>Bowlers</h3>
+  <% if @users %>
+    <% @users.each do |user| %>
+      <div class="bowler_summary">
+        <%= render partial: 'bowler', locals: {user: user} %>
+        <br>
+      </div>
+    <% end %>
+  <% end %>
+</div>
+
+

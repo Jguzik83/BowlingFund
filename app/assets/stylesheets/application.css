@@ -1,0 +1,105 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+
+html,
+body {
+  margin:0;
+  padding:0;
+  height:100%;
+}
+#wrapper {
+  min-height:100%;
+  position:relative;
+}
+#header {
+  background:#ededed;
+  padding:10px;
+}
+#content {
+  padding-bottom:100px; /* Height of the footer element */
+}
+#footer {
+  background:#ffab62;
+  width:100%;
+  height:100px;
+  position:absolute;
+  bottom:0;
+  left:0;
+}
+
+#welcome {
+  display: inline;
+  font-size: 40px;  
+  margin: 0 auto;
+  color: blue;
+}
+#header {
+  text-align: center;
+  vertical-align: middle;
+  line-height: 90px;
+}
+
+#nav_links {
+  float: right;
+  padding-top: 10px;
+  padding-right: 15px;
+}
+
+.total {
+  color: green;
+  text-align: center;
+  vertical-align: middle;
+  margin:0 auto;
+  font-size: 30px;
+}
+.total_to_go {
+  color: red;
+  text-align: center;
+  vertical-align: middle;
+  margin: 0 auto;
+  font-size: 30px;
+}
+
+a {
+  text-decoration: none;
+  color: transparent;
+}
+
+.bowlers {
+  padding-left: 30px;
+}
+
+#eventDetails {
+  text-align: center;
+  vertical-align: middle;
+  margin:0 auto;
+  padding-right: 15%;
+}
+
+#donate-wrapper {
+  padding-left: 30px;
+}
+
+.donationReview {
+  display: inline-block;
+  border: 1px solid green;
+  width: 200px;
+}
+.donationReview > h5 {
+  padding-left: 25px;
+}
+

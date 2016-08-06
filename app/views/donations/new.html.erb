@@ -1,0 +1,73 @@
+<div id="donate-wrapper">
+<h1>Make a Donation</h1>
+
+<p style="color:red"><i>Thank you for wanting to help. Please note that we are only accepting payments with PayPal at this time. I do not want to store your personal credit card information on my database. It would require me to do more work and I just don't have the time. Thanks for understanding!</i></p>
+
+
+<p>You decided to donate to team: <%= @user.name %> </p>
+
+<p>
+  We have two current ways of making a donation:
+  <ul>
+    <li>Donate by Pin</li>
+      <ul>
+        <li>Ethics, Honesty, How it works</li>
+          <ul>
+            <li>You make a donation on a per pin basis</li>
+            <li>After the event, you will receieve an email about what the bowler bowled</li>
+            <li>Please try and pay your donation as quickly as possible</li>
+            <li>Make sure you understand that if you donate $5.00/pin and your bowler bowls a 300, you owe $1500.00</li>
+            <li>Although you alone would help us hit our goal, I'm pretty sure you would be upset</li>
+            <li>Please don't make us hunt you down for your pledge. I promise you, we won't. But have some moral integrity</li>
+          </ul>
+      </ul>
+    <li>A flat donation</li>
+      <ul>
+        <li>Pretty Straight Forward: You pay right now and thats it</li>
+        <li>Please Log In to your paypal account and send your payment to:Jguzik@gmail.com</li>
+        <li><%=button_to "PayPal","http://paypal.com" %></li>
+      </ul>
+  </ul>
+</p>
+
+<p>
+  After You've made a donation through paypal, let your bowler know you donated to them. There may just be a prize for the bowler who raised the most money!!! <i>(terms and conditions apply)</i>
+</p>
+<div>
+  <%= form_for @donation do |f| %>
+  <%= f.hidden_field :user_id, :value => @user.id %>
+  <div>
+    <%= f.label :from %>
+    <%= f.text_field :from %>
+    <span style="color:green"><i>Who are you???</i></span>
+  </div>
+  <div>
+    <%= f.label :pledge %>
+    <%= f.text_field :pledge %> 
+    <span style="color:green"><i>How much did you just donate? If you did per/pin, add that to your note of love!</i></span>  
+  </div>
+  <div>
+    <%= f.label :note %>
+    <%= f.text_area :note %>
+    <span style="color:green"><i>Leave a note to your bowler!</i></span>  
+  </div>
+  <div>
+    <br>
+    <%= f.submit 'Add Donation Information' %>  
+  </div>
+  
+<% end %>
+</div>
+
+<div>
+  <% if @donations %>
+  <h3>Previous Donation Information</h3>
+    <% @donations.each do |donation| %>
+      <%= render partial: 'donate', locals: {donation: donation} %>
+    <% end %>
+    <% else %>
+    <h5>none</h5>
+  <% end %>
+</div>
+</div>
+

@@ -1,0 +1,37 @@
+<h1>Become a bowler...unlock your destiny</h1>
+
+  <% if flash[:errors] %>
+    <div id='error_box'>
+      <% flash[:errors].each do |error| %>
+        <div id='error_message'><%= error %></div>
+      <%end%>
+    </div>
+  <% end %>
+
+<%= form_for @user do |f| %>
+  <div>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+    <span style="color:green"><i>This is how people will donate for you</i></span>
+  </div>
+  <div>
+    <%= f.label :email %>
+    <%= f.text_field :email %> 
+    <%= f.label :password %>
+    <%= f.password_field :password %>
+    <span style="color:green"><i>Use these fields to log into your account if you want to change your average or quirky detail</i></span>  
+  </div>
+  <div>
+    <%= f.label 'Tell us something fun about you!' %>
+    <%= f.text_field :bio %>
+  </div>
+  <div>
+    <%= f.label :average %>
+    <%= f.text_field :average %>    
+  </div>
+  <div>
+    <br>
+    <%= f.submit 'Sign Up' %>  
+  </div>
+  
+<% end %>
